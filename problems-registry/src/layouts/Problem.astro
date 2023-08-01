@@ -1,0 +1,87 @@
+---
+const {frontmatter} = Astro.props;
+---
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="SmartBear Problems Registry">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Problems Registry - {frontmatter.title}</title>
+	</head>
+	<body>
+		<header>
+            <nav>
+                <div class="nav-links">
+                    <a href="/">
+                        <span>&larr;</span>
+                        Problems Registry
+                    </a>
+                </div>
+            </nav>
+		</header>    
+        <h1>{frontmatter.title}</h1>
+        <p>{frontmatter.description}</p>
+        <slot /> 
+	</body>
+</html>
+<style is:global>
+	html {
+		font-family: "Open Sans",sans-serif;
+		background-size: 224px;
+        color: #173647;
+	}
+    body { 
+	    max-width: 1080px; 
+	    margin: 0 auto !important; 
+	    float: none !important; 
+    }
+	code {
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: #ff9776;
+  display: none;
+  margin: 0;
+  color: #097eb2;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-links a:hover, a:focus {
+    color: #00537c;
+    text-decoration: underline
+}
+
+.expanded {
+  display: unset;
+}
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px 15px 0px;
+  }
+
+}
+</style>

@@ -1,0 +1,112 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Problem Details Registry.">
+	<main>
+
+		<h1>SmartBear Problem Details Registry</h1>
+
+		<p>
+			This registry acts as a well known location for problem detail types returned by various SmartBear APIs. It acts as a central registry to promote reuse and clarity of problem 
+			detail types conforming to <a href="https://www.rfc-editor.org/info/rfc9457">RFC 9457</a> and <a href="https://www.rfc-editor.org/info/rfc7807">RFC7807</a>.
+		</p>
+
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="./not-found"
+				title="Not Found"
+				body="The requested resource could not be found 🔍"
+			/>
+			<Card
+				href="./unauthorized"
+				title="Unauthorized"
+				body="The client request missed or malformed its credentials 🔒"
+			/>
+			<Card
+				href="./forbidden"
+				title="Forbidden"
+				body="The request is not authorized for the resource 🔒"
+			/>
+			<Card
+				href="./bad-request"
+				title="Bad Request"
+				body="The client request is invalid or malformed ⚠️"
+			/>
+			<Card
+				href="./invalid-parameters"
+				title="Invalid Parameters"
+				body="One or more of the parameters was malformed ⚠️"
+			/>
+			<Card
+				href="./service-unavailable"
+				title="Service unavailable"
+				body="The requested service is currently unavailable 🚧"
+			/>			
+			<Card
+				href="./server-error"
+				title="Server Error"
+				body="The server encountered an unexpected error 💥"
+			/>						
+		</ul>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.3em 0.4em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>
