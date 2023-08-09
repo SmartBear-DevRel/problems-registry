@@ -10,9 +10,67 @@ import Card from '../components/Card.astro';
 
 		<p>
 			This registry acts as a well known location for problem detail types returned by various SmartBear APIs. It acts as a central registry to promote reuse and clarity of problem 
-			detail types conforming to <a href="https://www.rfc-editor.org/info/rfc9457">RFC 9457</a> and <a href="https://www.rfc-editor.org/info/rfc7807">RFC7807</a>.
+			detail types conforming to <a href="https://www.rfc-editor.org/info/rfc9457">RFC 9457</a> (formerly <a href="https://www.rfc-editor.org/info/rfc7807">RFC7807</a>).
 		</p>
 
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="./already-exists"
+				title="Already Exists"
+				body="The request attempted to create a resource that already exists 🚩"
+			/>	
+			<Card
+				href="./missing-body-property"
+				title="Missing Body Property"
+				body="The request is missing an expected body property 🔍"
+			/>	
+			<Card
+				href="./missing-request-header"
+				title="Missing Request Header"
+				body="The request lacked an expected header 🔍"
+			/>
+			<Card
+				href="./missing-request-parameter"
+				title="Missing Request Parameter"
+				body="The request is missing an query or path parameter 🔍"
+			/>	
+			<Card
+				href="./invalid-body-property-format"
+				title="Invalid Body Property Format"
+				body="One or more of the body properties was malformed ⚠️"
+			/>
+			<Card
+				href="./invalid-request-parameter-format"
+				title="Invalid Request Parameter Format"
+				body="One or more of the query or path parameters was malformed ⚠️"
+			/>			
+			<Card
+				href="./invalid-request-header-format"
+				title="Invalid Request Header Format"
+				body="One or more of the request headers was malformed ⚠️"
+			/>
+			<Card
+				href="./invalid-body-property-value"
+				title="Invalid Body Property Value"
+				body="One or more of the body property values are invalid ⚠️"
+			/>	
+			<Card
+				href="./invalid-request-parameter-value"
+				title="Invalid Request Parameter Value"
+				body="One or more of the query or path parameter values are invalid ⚠️"
+			/>																	
+			<Card
+				href="./business-rule-violation"
+				title="Business Rule Violation"
+				body="The request is deemed invalid as it failed business rule checks 🏢"
+			/>																		
+		</ul>
+
+		<p>
+			The following types can also be leveraged for convienience, 
+			however the recommendation would be to utilize the <a href="https://www.iana.org/assignments/http-problem-types/http-problem-types.xhtml">IANA registry</a> for generic/common types.			
+		</p>
+		
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="./not-found"
