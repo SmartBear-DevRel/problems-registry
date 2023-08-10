@@ -20,7 +20,13 @@ Your client issued a request that omitted an expected body property. Please revi
     "title": "Missing body property",
     "detail": "The request is missing an expected body property.",
     "status": 400,
-    "code": "400-09"    
+    "code": "400-09",
+    "errors": [
+        {
+            "detail": "The body property {name} is required",
+            "pointer": "#/name"
+        }
+     ]        
 }
 ```
 

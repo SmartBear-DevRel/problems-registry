@@ -17,7 +17,7 @@ Your client application tried to perform an operation on a resource that it's no
 **Examples of a `forbidden` problem details:**
 ```yaml
 {
-    "type": "https://problems-registry.smartbear.com/problems/forbidden",
+    "type": "https://problems-registry.smartbear.com/forbidden",
     "title": "Forbidden",
     "detail": "The resource could not be returned as the requestor is not authorized",
     "status": 403,

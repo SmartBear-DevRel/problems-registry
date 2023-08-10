@@ -17,7 +17,7 @@ Your client application initiated a request that is malformed. Please review you
 **Examples of a `bad-request` problem details:**
 ```yaml
 {
-    "type": "https://problems-registry.smartbear.com/problems/bad-request",
+    "type": "https://problems-registry.smartbear.com/bad-request",
     "title": "Bad Request",
     "detail": "The request is invalid or malformed",
     "status": 400,

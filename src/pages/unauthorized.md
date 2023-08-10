@@ -17,7 +17,7 @@ Your client application issued a requested to a protected resource without suppl
 **Examples of an `unauthorized` problem details:**
 ```yaml
 {
-    "type": "https://problems-registry.smartbear.com/problems/unauthorized",
+    "type": "https://problems-registry.smartbear.com/unauthorized",
     "title": "Unauthorized",
     "detail": "Access token not set or invalid, and the requested resource could not be returned",
     "status": 401,
