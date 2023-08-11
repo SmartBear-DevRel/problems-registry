@@ -17,7 +17,7 @@ Your client application did everything correct. Unfortunately our API encountere
 **Examples of a `server-error` problem details:**
 ```yaml
 {
-    "type": "https://problems-registry.smartbear.com/problems/server-error",
+    "type": "https://problems-registry.smartbear.com/server-error",
     "title": "Server Error",
     "detail": "The server encountered an unexpected error",
     "status": 500,

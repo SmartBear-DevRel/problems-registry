@@ -17,7 +17,7 @@ Your client application did everything correct. Unfortunately our API is current
 **Examples of a `service-unavailable` problem details:**
 ```yaml
 {
-    "type": "https://problems-registry.smartbear.com/problems/service-unavailable",
+    "type": "https://problems-registry.smartbear.com/service-unavailable",
     "title": "Service Unavailable",
     "detail": "The service is currently unavailable",
     "status": 503,

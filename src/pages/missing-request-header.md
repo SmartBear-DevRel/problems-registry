@@ -20,7 +20,13 @@ Your client issued a request that omitted an expected request header. Please rev
     "title": "Missing request header",
     "detail": "The request is missing an expected HTTP request header.",
     "status": 400,
-    "code": "400-02"    
+    "code": "400-02",
+    "errors": [
+        {
+            "detail": "The header {Accept} is required",
+            "header": "Accept"
+        }
+    ]    
 }
 ```
 

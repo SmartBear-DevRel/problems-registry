@@ -12,7 +12,7 @@ Your client application issued a request to an API that contains invalid or malf
 **Example of an `invalid-parameters` problem details:**
 ```yaml
 {
-    "type": "https://problems-registry.smartbear.com/problems/invalid-parameters",
+    "type": "https://problems-registry.smartbear.com/invalid-parameters",
     "title": "Invalid parameters",
     "detail": "The request contained invalid, or malformed parameters (path or header or query)",
     "status": 400,
