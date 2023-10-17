@@ -14,7 +14,7 @@ Your client issued a request that contained a malformed query or path parameter.
 
 
 **Example of an `invalid-request-parameter-format` problem details:**
-```yaml
+```json
 {
     "type": "https://problems-registry.smartbear.com/invalid-request-parameter-format",
     "title": "Invalid Request Parameter Format",

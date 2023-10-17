@@ -16,7 +16,7 @@ Your client application tried to access a resource that does not exist (or could
 
 **Examples of an `not-found` problem details:**
 
-```yaml
+```json
 {
     "type": "https://problems-registry.smartbear.com/not-found",
     "title": "Not Found",
@@ -26,7 +26,7 @@ Your client application tried to access a resource that does not exist (or could
 }
 ```
 
-```yaml
+```json
 {
     "type": "about:blank",
     "title": "Not Found",

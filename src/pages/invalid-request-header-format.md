@@ -14,7 +14,7 @@ Your client issued a request that contained a malformed request header. Please r
 
 
 **Example of an `invalid-request-header-format` problem details:**
-```yaml
+```json
 {
     "type": "https://problems-registry.smartbear.com/invalid-request-header-format",
     "title": "Invalid Request Header Format",

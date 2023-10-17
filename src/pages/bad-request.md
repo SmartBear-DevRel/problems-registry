@@ -15,7 +15,7 @@ Your client application initiated a request that is malformed. Please review you
 
 
 **Examples of a `bad-request` problem details:**
-```yaml
+```json
 {
     "type": "https://problems-registry.smartbear.com/bad-request",
     "title": "Bad Request",
@@ -25,7 +25,7 @@ Your client application initiated a request that is malformed. Please review you
 }
 ```
 
-```yaml
+```json
 {
     "type": "about:blank",
     "title": "Bad Request",

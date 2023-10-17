@@ -15,7 +15,7 @@ Your client application did everything correct. Unfortunately our API encountere
 
 
 **Examples of a `server-error` problem details:**
-```yaml
+```json
 {
     "type": "https://problems-registry.smartbear.com/server-error",
     "title": "Server Error",
@@ -25,7 +25,7 @@ Your client application did everything correct. Unfortunately our API encountere
 }
 ```
 
-```yaml
+```json
 {
     "type": "about:blank",
     "title": "Server Error",

@@ -15,7 +15,7 @@ Your client application issued a requested to a protected resource without suppl
 
 
 **Examples of an `unauthorized` problem details:**
-```yaml
+```json
 {
     "type": "https://problems-registry.smartbear.com/unauthorized",
     "title": "Unauthorized",
@@ -25,7 +25,7 @@ Your client application issued a requested to a protected resource without suppl
 }
 ```
 
-```yaml
+```json
 {
     "type": "about:blank",
     "title": "Unauthorized",

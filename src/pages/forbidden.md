@@ -15,7 +15,7 @@ Your client application tried to perform an operation on a resource that it's no
 
 
 **Examples of a `forbidden` problem details:**
-```yaml
+```json
 {
     "type": "https://problems-registry.smartbear.com/forbidden",
     "title": "Forbidden",
@@ -25,7 +25,7 @@ Your client application tried to perform an operation on a resource that it's no
 }
 ```
 
-```yaml
+```json
 {
     "type": "about:blank",
     "title": "Forbidden",

@@ -14,7 +14,7 @@ Your client issued a request that contained an invalid query or path parameter v
 
 
 **Example of an `invalid-request-parameter-value` problem details:**
-```yaml
+```json
 {
     "type": "https://problems-registry.smartbear.com/invalid-request-parameter-value",
     "title": "Invalid Request Parameter Value",
