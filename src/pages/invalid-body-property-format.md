@@ -14,7 +14,7 @@ Your client issued a request that contained a malformed body property. Please re
 
 
 **Example of an `invalid-body-property-format` problem details:**
-```yaml
+```json
 {
     "type": "https://problems-registry.smartbear.com/invalid-body-property-format",
     "title": "Invalid Body Property Format",

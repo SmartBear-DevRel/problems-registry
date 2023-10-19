@@ -10,7 +10,7 @@ Your client application issued a request to an API that contains invalid or malf
 
 
 **Example of an `invalid-parameters` problem details:**
-```yaml
+```json
 {
     "type": "https://problems-registry.smartbear.com/invalid-parameters",
     "title": "Invalid parameters",

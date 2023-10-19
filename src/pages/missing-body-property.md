@@ -14,7 +14,7 @@ Your client issued a request that omitted an expected body property. Please revi
 
 
 **Example of an `missing-body-property` problem details:**
-```yaml
+```json
 {
     "type": "https://problems-registry.smartbear.com/missing-body-property",
     "title": "Missing body property",

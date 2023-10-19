@@ -15,7 +15,7 @@ Your client application did everything correct. Unfortunately our API is current
 
 
 **Examples of a `service-unavailable` problem details:**
-```yaml
+```json
 {
     "type": "https://problems-registry.smartbear.com/service-unavailable",
     "title": "Service Unavailable",
@@ -25,7 +25,7 @@ Your client application did everything correct. Unfortunately our API is current
 }
 ```
 
-```yaml
+```json
 {
     "type": "about:blank",
     "title": "Service Unavailable",

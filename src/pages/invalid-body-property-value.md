@@ -14,7 +14,7 @@ Your client issued a request that contained an invalid body property value. Plea
 
 
 **Example of an `invalid-body-property-value` problem details:**
-```yaml
+```json
 {
     "type": "https://problems-registry.smartbear.com/invalid-body-property-value",
     "title": "Invalid Body Property Value",

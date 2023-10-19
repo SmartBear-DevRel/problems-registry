@@ -23,44 +23,71 @@ When necessary, a Problem Detail response _MAY_ include additional detail on the
 
 ```json
 {
-  "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "type": "object",
-  "description": "an extension object used to enrich problem details responses for SmartBear APIs",
-  "properties": {
-    "errors": {
-      "type": "array",
-      "description": "an array of error details to accompany a problem details response",
-      "items": [
-        {
-          "type": "object",
-          "description": "an error object to provide explicit details on a problem towards an API consumer",
-          "properties": {
-            "detail": {
-              "type": "string",
-              "description": "a granular description on the specific error related to a body property, query parameter, path parameters, and/or header"
-            },
-            "pointer": {
-              "type": "string",
-              "description": "a JSON Pointer to a specific request body property that is the source of error"
-            },
-            "parameter": {
-              "type": "string",
-              "description": "the name of the query or path parameter that is the source of error"
-            },
-            "header": {
-              "type": "string",
-              "description": "the name of the header that is the source of error"
-            }
-          },
-          "required": [
-            "detail"
-          ]
-        }
-      ]
-    }
-  },
-  "required": [
-    "errors"
-  ]
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"properties": {
+		"type": {
+			"type": "string",
+			"description": "a string containing a URI reference that identifies the problem type. When this member is not present, its value is assumed to be `about:blank`."
+		},
+		"status": {
+			"type": "number",
+			"description": "a number indicating the HTTP status code."
+		},
+		"title": {
+			"type": "string",
+			"description": "a string containing a short, human-readable summary of the problem type."
+		},
+		"detail": {
+			"type": "string",
+			"description": "a string containing a human-readable explanation specific to this occurrence of the problem."
+		},
+		"instance": {
+			"type": "string",
+			"description": "a string containing a URI reference that identifies the specific occurrence of the problem."
+		},
+		"code": {
+			"type": "string",
+			"description": "a string containing additional provider specific codes to identify the error context."
+		},
+		"errors": {
+			"type": "array",
+			"description": "an array of error details to accompany a problem details response",
+			"items": [
+				{
+					"type": "object",
+					"description": "an error object to provide explicit details on a problem towards an API consumer",
+					"properties": {
+						"detail": {
+							"type": "string",
+							"description": "a granular description on the specific error related to a body property, query parameter, path parameters, and/or header"
+						},
+						"pointer": {
+							"type": "string",
+							"description": "a JSON Pointer to a specific request body property that is the source of error"
+						},
+						"parameter": {
+							"type": "string",
+							"description": "a string containing the name of the query or path parameter that is the source of error"
+						},
+						"header": {
+							"type": "string",
+							"description": "a string containing the name of the header that is the source of error"
+						},
+						"code": {
+							"type": "string",
+							"description": "a string containing additional provider specific codes to identify the error context."
+						}
+					},
+					"required": [
+						"detail"
+					]
+				}
+			]
+		}
+	},
+	"required": [
+		"title"
+	]
 }
 ```

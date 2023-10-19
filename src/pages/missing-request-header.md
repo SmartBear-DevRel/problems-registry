@@ -14,7 +14,7 @@ Your client issued a request that omitted an expected request header. Please rev
 
 
 **Example of an `missing-request-header` problem details:**
-```yaml
+```json
 {
     "type": "https://problems-registry.smartbear.com/missing-request-header",
     "title": "Missing request header",

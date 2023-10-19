@@ -14,7 +14,7 @@ Your client issued a request that omitted an expected query or path par. Please 
 
 
 **Example of an `missing-request-parameter` problem details:**
-```yaml
+```json
 {
     "type": "https://problems-registry.smartbear.com/missing-request-parameter",
     "title": "Missing request parameter",

@@ -14,7 +14,7 @@ Your client issued a request that failed business rule validation. Please review
 
 
 **Example of an `business-rule-violation` problem details:**
-```yaml
+```json
 {
     "type": "https://problems-registry.smartbear.com/business-rule-violation",
     "title": "Business Rule Violation",

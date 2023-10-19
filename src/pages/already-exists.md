@@ -14,7 +14,7 @@ Your client application tried to create a resource that already exists. Perhaps 
 
 
 **Example of an `already-exists` problem details:**
-```yaml
+```json
 {
     "type": "https://problems-registry.smartbear.com/already-exists",
     "title": "Already exists",
