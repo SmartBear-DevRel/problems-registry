@@ -14,7 +14,7 @@ Please review your request to determine if you can remain within appropriate bus
 
 > **Note** A problem is generally **not** meant to be used for end-user input validation, but for client developer convenience. 
 
-**Example of an `validation-error` problem details:**
+**Example of a `validation-error` problem details:**
 
 ```json
 {
