@@ -29,7 +29,7 @@ Please review your request to determine if you can remain within appropriate bus
             "pointer": "#/name"
         },
         {
-            "detail": "the path parameter does not conform to the expect format",
+            "detail": "the path parameter does not conform to the expected format",
             "parameter": "petId"
         }       
      ]
