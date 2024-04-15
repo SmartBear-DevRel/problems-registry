@@ -1,6 +1,8 @@
 # problems
 [Problem registry](https://problems-registry.smartbear.com/) for SmartBear API responses conforming to Problem Details [RFC 9457](https://www.rfc-editor.org/info/rfc9457) (formally [RFC 7808](https://www.rfc-editor.org/info/rfc7807)).
 
+If your goal is to improve error handling in your next API, check out our public [reusable Problem Details domain](https://app.swaggerhub.com/domains/smartbear-public/ProblemDetails/1.0.0) which you can reference (`$ref`) from with your OpenAPI descriptions. 🚀
+
 ## Contribute
 If you would like to add a new problem entry to the registry, submit a PR with the following type of changes:
 
