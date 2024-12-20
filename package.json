@@ -1,7 +1,7 @@
 {
   "name": "problems-registry",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,6 +10,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.9.5"
+    "astro": "^4.16.18"
   }
 }
