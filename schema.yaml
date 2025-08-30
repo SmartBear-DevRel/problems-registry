@@ -31,27 +31,6 @@ $defs:
           A granular description on the specific error related to a body
           property, query parameter, path parameters, and/or header.
         maxLength: 4096
-        enum:
-        - 'about:blank'
-        - 'https://problems-registry.smartbear.com/already-exists'
-        - 'https://problems-registry.smartbear.com/bad-request'
-        - 'https://problems-registry.smartbear.com/business-rule-violation'
-        - 'https://problems-registry.smartbear.com/forbidden'
-        - 'https://problems-registry.smartbear.com/invalid-body-property-format'
-        - 'https://problems-registry.smartbear.com/invalid-body-property-value'
-        - 'https://problems-registry.smartbear.com/invalid-parameters'
-        - 'https://problems-registry.smartbear.com/invalid-request-header-format'
-        - 'https://problems-registry.smartbear.com/invalid-request-parameter-format'
-        - 'https://problems-registry.smartbear.com/invalid-request-parameter-value'
-        - 'https://problems-registry.smartbear.com/license-cancelled'
-        - 'https://problems-registry.smartbear.com/license-expired'
-        - 'https://problems-registry.smartbear.com/missing-body-property'
-        - 'https://problems-registry.smartbear.com/missing-request-header'
-        - 'https://problems-registry.smartbear.com/not-found'
-        - 'https://problems-registry.smartbear.com/server-error'
-        - 'https://problems-registry.smartbear.com/service-unavailable'
-        - 'https://problems-registry.smartbear.com/unauthorized'
-        - 'https://problems-registry.smartbear.com/validation-error'
       pointer:
         type: string
         description: >-
@@ -99,6 +78,27 @@ $defs:
         description: A URI reference that identifies the problem type.
         format: uri
         maxLength: 1024
+        enum:
+        - 'about:blank'
+        - 'https://problems-registry.smartbear.com/already-exists'
+        - 'https://problems-registry.smartbear.com/bad-request'
+        - 'https://problems-registry.smartbear.com/business-rule-violation'
+        - 'https://problems-registry.smartbear.com/forbidden'
+        - 'https://problems-registry.smartbear.com/invalid-body-property-format'
+        - 'https://problems-registry.smartbear.com/invalid-body-property-value'
+        - 'https://problems-registry.smartbear.com/invalid-parameters'
+        - 'https://problems-registry.smartbear.com/invalid-request-header-format'
+        - 'https://problems-registry.smartbear.com/invalid-request-parameter-format'
+        - 'https://problems-registry.smartbear.com/invalid-request-parameter-value'
+        - 'https://problems-registry.smartbear.com/license-cancelled'
+        - 'https://problems-registry.smartbear.com/license-expired'
+        - 'https://problems-registry.smartbear.com/missing-body-property'
+        - 'https://problems-registry.smartbear.com/missing-request-header'
+        - 'https://problems-registry.smartbear.com/not-found'
+        - 'https://problems-registry.smartbear.com/server-error'
+        - 'https://problems-registry.smartbear.com/service-unavailable'
+        - 'https://problems-registry.smartbear.com/unauthorized'
+        - 'https://problems-registry.smartbear.com/validation-error'
       status:
         type: integer
         description: >-
