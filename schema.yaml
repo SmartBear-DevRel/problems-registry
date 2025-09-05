@@ -37,24 +37,20 @@ $defs:
           A JSON Pointer to a specific request body property that is the
           source of error.
         maxLength: 1024
-        default: null
       parameter:
         type: string
         description: The name of the query or path parameter that is the source of error.
         maxLength: 1024
-        default: null
       header:
         type: string
         description: The name of the header that is the source of error.
         maxLength: 1024
-        default: null
       code:
         type: string
         description: >-
           A string containing additional provider specific codes to identify
           the error context.
         maxLength: 50
-        default: null
 
   ProblemDetails:
     type: object
