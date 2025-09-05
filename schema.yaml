@@ -153,6 +153,17 @@ $defs:
           the problem.
         format: int32
         const: 409
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'Already exists'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The resource being created already exists.'
 
   BadRequest:
     type: object
@@ -175,6 +186,17 @@ $defs:
           the problem.
         format: int32
         const: 400
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'Bad Request'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The request is invalid or malformed.'
 
   BusinessRuleViolation:
     type: object
@@ -197,6 +219,17 @@ $defs:
           the problem.
         format: int32
         const: 422
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'Business Rule Violation'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The request body is invalid and not meeting business rules.'
 
   Forbidden:
     type: object
@@ -219,6 +252,17 @@ $defs:
           the problem.
         format: int32
         const: 403
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'Forbidden'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The resource could not be returned as the requestor is not authorized.'
 
   InvalidBodyPropertyFormat:
     type: object
@@ -241,6 +285,17 @@ $defs:
           the problem.
         format: int32
         const: 400
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'Invalid Body Property Format'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The request body contains a malformed property.'
 
   InvalidBodyPropertyValue:
     type: object
@@ -263,6 +318,17 @@ $defs:
           the problem.
         format: int32
         const: 400
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'Invalid Body Property Value'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The request body contains an invalid body property value.'
 
   InvalidParameters:
     type: object
@@ -285,6 +351,17 @@ $defs:
           the problem.
         format: int32
         const: 400
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'Invalid parameters'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The request contained invalid, or malformed parameters (path or header or query).'
 
   InvalidRequestHeaderFormat:
     type: object
@@ -307,6 +384,17 @@ $defs:
           the problem.
         format: int32
         const: 400
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'Invalid Request Header Format'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The request contains a malformed request header parameter.'
 
   InvalidRequestParameterFormat:
     type: object
@@ -330,6 +418,17 @@ $defs:
           the problem.
         format: int32
         const: 400
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'Invalid Request Parameter Format'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The request contains a malformed request query parameter.'
 
   InvalidRequestParameterValue:
     type: object
@@ -353,6 +452,17 @@ $defs:
           the problem.
         format: int32
         const: 400
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'Invalid Request Parameter Value'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The request body contains an invalid request parameter value.'
 
   LicenseCancelled:
     type: object
@@ -376,6 +486,17 @@ $defs:
           the problem.
         format: int32
         const: 503
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'License Cancelled'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The service is unavailable as the license associated with your client or organization has been cancelled. Please contact your account manager or representative.'
 
   LicenseExpired:
     type: object
@@ -399,6 +520,17 @@ $defs:
           the problem.
         format: int32
         const: 503
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'License Expired'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The service is unavailable as the license associated with your client or organization has expired. Please contact your account manager or representative.'
 
   MissingBodyProperty:
     type: object
@@ -421,6 +553,17 @@ $defs:
           the problem.
         format: int32
         const: 400
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'Missing body property'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The request is missing an expected body property.'
 
   MissingRequestHeader:
     type: object
@@ -443,6 +586,17 @@ $defs:
           the problem.
         format: int32
         const: 400
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'Missing request header'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The request is missing an expected HTTP request header.'
 
   MissingRequestParameter:
     type: object
@@ -465,6 +619,17 @@ $defs:
           the problem.
         format: int32
         const: 400
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'Missing request parameter'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The request is missing an expected query or path parameter.'
 
   NotFound:
     type: object
@@ -487,6 +652,17 @@ $defs:
           the problem.
         format: int32
         const: 404
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'Not Found'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The requested resource was not found.'
 
   ServerError:
     type: object
@@ -509,6 +685,17 @@ $defs:
           the problem.
         format: int32
         const: 500
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'Server Error'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The server encountered an unexpected error.'
 
   ServiceUnavailable:
     type: object
@@ -531,6 +718,17 @@ $defs:
           the problem.
         format: int32
         const: 503
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'Service Unavailable'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The service is currently unavailable.'
 
   Unauthorized:
     type: object
@@ -553,6 +751,17 @@ $defs:
           the problem.
         format: int32
         const: 401
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'Unauthorized'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'Access token not set or invalid, and the requested resource could not be returned.'
 
   ValidationError:
     type: object
@@ -577,3 +786,14 @@ $defs:
           the problem.
         format: int32
         const: 422
+      title:
+        type: string
+        description: >-
+          A short, human-readable summary of the problem type. It should not change
+          from occurrence to occurrence of the problem, except for purposes of
+          localization.
+        const: 'Validation Error'
+      detail:
+        type: string
+        description: A human-readable explanation specific to this occurrence of the problem.
+        const: 'The request is not valid.'
