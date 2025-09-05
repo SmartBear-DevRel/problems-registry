@@ -52,13 +52,6 @@ $defs:
           the error context.
         maxLength: 50
 
-  Errors:
-    type: array
-    description: An array of error details to accompany a problem details response.
-    maxItems: 1000
-    items:
-      $ref: '#/$defs/ErrorDetail'
-
   ProblemDetails:
     type: object
     description: >-
@@ -131,7 +124,11 @@ $defs:
           based on their own potential taxonomy or registry.
         maxLength: 50
       errors:
-        ref: '#/$defs/Errors'
+        type: array
+        description: An array of error details to accompany a problem details response.
+        maxItems: 1000
+        items:
+          $ref: '#/$defs/ErrorDetail'
 
 # Utility objects
 
